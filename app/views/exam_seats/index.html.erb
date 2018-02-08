@@ -1,0 +1,135 @@
+<% provide(:title, 'Index') %>
+
+<h1>Seat Plan</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Room No.</th>
+      <th>Section</th>
+      <th>course</th>
+      <th>Seats left</th>
+    </tr>
+  </thead>
+
+  <tbody>
+     <tr>
+       <td>
+         <% @exam_seats1.each do |exam_seat| %>
+           <div class='exam_seats'>
+             <strong> <%= exam_seat.room %> </strong>
+             <% break %>
+           </div>
+         <% end %>
+       </td>
+       <td>
+         <% @exam_seats1.each do |exam_seat| %>
+           <div class='exam_seats'>
+             <strong> <%= exam_seat.section %> </strong>
+             <% break %>
+           </div>
+         <% end %>
+       </td>
+       <td>
+         <% @exam_seats1.each do |exam_seat| %>
+           <div class='exam_seats'>
+             <strong> <%= exam_seat.course %> </strong>
+             <% break %>
+           </div>
+         <% end %>
+       </td>
+       <td>
+         <%= @exam_seats1.count %>
+       </td>
+      </tr>
+
+      <tr>
+        <td>
+          <% @exam_seats2.each do |exam_seat| %>
+            <div class='exam_seats'>
+              <strong> <%= exam_seat.room %> </strong>
+              <% break %>
+            </div>
+          <% end %>
+        </td>
+        <td>
+          <% @exam_seats2.each do |exam_seat| %>
+            <div class='exam_seats'>
+              <strong> <%= exam_seat.section %> </strong>
+              <% break %>
+            </div>
+          <% end %>
+        </td>
+        <td>
+          <% @exam_seats2.each do |exam_seat| %>
+            <div class='exam_seats'>
+              <strong> <%= exam_seat.course %> </strong>
+              <% break %>
+            </div>
+          <% end %>
+        </td>
+        <td>
+          <%= @exam_seats2.count %>
+        </td>
+       </tr>
+
+       <tr>
+         <td>
+           <% @exam_seats3.each do |exam_seat| %>
+             <div class='exam_seats'>
+               <strong> <%= exam_seat.room %> </strong>
+               <% break %>
+             </div>
+           <% end %>
+         </td>
+         <td>
+           <% @exam_seats3.each do |exam_seat| %>
+             <div class='exam_seats'>
+               <strong> <%= exam_seat.section %> </strong>
+               <% break %>
+             </div>
+           <% end %>
+         </td>
+         <td>
+           <% @exam_seats3.each do |exam_seat| %>
+             <div class='exam_seats'>
+               <strong> <%= exam_seat.course %> </strong>
+               <% break %>
+             </div>
+           <% end %>
+         </td>
+         <td>
+           <%= @exam_seats3.count %>
+         </td>
+        </tr>
+
+        <tr>
+          <td>
+            <% @exam_seats4.each do |exam_seat| %>
+              <div class='exam_seats'>
+                <strong> <%= exam_seat.room %> </strong>
+                <% break %>
+              </div>
+            <% end %>
+          </td>
+          <td>
+            <% @exam_seats4.each do |exam_seat| %>
+              <div class='exam_seats'>
+                <strong> <%= exam_seat.section %> </strong>
+                <% break %>
+              </div>
+            <% end %>
+          </td>
+          <td>
+            <% @exam_seats4.each do |exam_seat| %>
+              <div class='exam_seats'>
+                <strong> <%= exam_seat.course %> </strong>
+                <% break %>
+              </div>
+            <% end %>
+          </td>
+          <td>
+            <%= @exam_seats4.count %>
+          </td>
+         </tr>
+  </tbody>
+</table>

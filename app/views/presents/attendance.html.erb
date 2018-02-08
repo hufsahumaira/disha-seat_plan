@@ -1,0 +1,13 @@
+<% provide(:title, 'Attendance') %>
+<% provide(:button_text, 'Enter') %>
+
+<h1>Enter Your Student ID</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_tag(attendance_path, method: :post) do %>
+      <%= text_field_tag :studId, params[:studId] %>
+      <%= submit_tag yield(:button_text), name: nil, class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

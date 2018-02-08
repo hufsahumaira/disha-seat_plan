@@ -1,0 +1,17 @@
+<%= form_for(@exam_seat) do |f| %>
+  <%= render 'shared/error_messages', object: @exam_seat %>
+
+  <%= f.label :studId %>
+  <%= f.text_field :studId, class: 'form-control' %>
+
+  <%= f.label :section %>
+  <%= f.text_field :section, class: 'form-control' %>
+
+  <%= f.label :course %>
+  <%= f.text_field :course, class: 'form-control' %>
+
+  <%= f.label :room %>
+  <%= f.text_field :room, class: 'form-control' %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
